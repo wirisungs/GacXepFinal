@@ -1,0 +1,96 @@
+﻿@model IEnumerable<GacXep.Models.BookDetail>
+
+@foreach (var item in Model)
+{
+    <div class="prd_sec margin-top-20">
+        <div class="products owl-carousel owl-theme products-view-grid owl-loaded owl-drag" data-nav="true" data-lg-items="5" data-md-items="4" data-sm-items="3" data-xs-items="2" data-margin="20">
+            <div class="owl-stage-outer">
+                <div class="owl-stage style-R7eC8" id="style-R7eC8">
+                    <div class="owl-item active style-cZ3Ky" id="style-cZ3Ky">
+                        <div class="item saler_item">
+                            <div class="product-loop-1 product-loop-sea product-base">
+                                <div class="product-thumbnail">
+                                    <a class="image_link display_flex" href="/eleanor-park-1" title="Eleanor &amp; Park">
+                                        <img src="@Url.Content(item.Book.ProImage)" data-lazyload="//bizweb.dktcdn.net/thumb/large/100/364/248/products/61f8o6hj19l-sl1000.jpg?v=1694758005953" alt="Eleanor &amp; Park">
+                                    </a>
+                                    <div class="product-action clearfix hidden-xs">
+                                        <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-32567085" enctype="multipart/form-data">
+                                            <div class="group_action">
+                                                <a title="Xem nhanh" href="/eleanor-park-1" data-handle="eleanor-park-1" class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md">
+                                                    <ion-icon name="eye" role="img" class="hydrated" aria-label="eye">
+                                                    </ion-icon>
+                                                </a>
+                                                <input type="hidden" name="variantId" value="97904227">
+                                                <button class="btn-buy btn-cart btn btn-circle left-to add_to_cart " title="Đặt hàng ngay">
+                                                    <i class="fas fa-dolly">
+                                                    </i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="product-info a-left">
+                                    <h3 class="product-name">
+                                        <a href="/eleanor-park-1" title="Eleanor &amp; Park">
+                                            @item.Book.ProName
+                                        </a>
+                                    </h3>
+                                    <div class="product-hideoff">
+                                        <div class="product-hide">
+                                            <div class="price-box clearfix">
+                                                <div class="special-price">
+                                                    <span class="price product-price">
+                                                        @item.Price
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="status_name availabel">
+                                                <link itemprop="availability" href="http://schema.org/InStock">
+                                                In stock
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-loop-1 product-loop-sea product-base">
+                                <div class="product-thumbnail">
+                                    <a class="image_link display_flex" href="/the-first-to-die-at-the-end-uk-paperback" title="The First to Die at the End: The prequel to THEY BOTH DIE AT THE END(UK paperback)">
+                                        <img src="https://bizweb.dktcdn.net/thumb/large/100/364/248/products/71m5lnoshhl.jpg?v=1691213644093" data-lazyload="//bizweb.dktcdn.net/thumb/large/100/364/248/products/71m5lnoshhl.jpg?v=1691213644093" alt="The First to Die at the End: The prequel to THEY BOTH DIE AT THE END(UK paperback)">
+                                    </a>
+                                    <div class="product-action clearfix hidden-xs">
+                                        <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-32126584" enctype="multipart/form-data">
+                                            <div class="group_action">
+                                                <a title="Xem nhanh" href="/the-first-to-die-at-the-end-uk-paperback" data-handle="the-first-to-die-at-the-end-uk-paperback" class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md">
+                                                    <ion-icon name="eye" role="img" class="hydrated" aria-label="eye">
+                                                    </ion-icon>
+                                                </a>
+                                                <input type="hidden" name="variantId" value="95032696">
+                                                <button class="btn-buy btn-cart btn btn-circle left-to add_to_cart " title="Đặt hàng ngay">
+                                                    <i class="fas fa-dolly">
+                                                    </i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="owl-nav disabled">
+                <div class="owl-prev disabled">
+                    prev
+                </div>
+                <div class="owl-next disabled">
+                    next
+                </div>
+            </div>
+            <div class="owl-dots disabled">
+            </div>
+        </div>
+    </div>
+
+}
